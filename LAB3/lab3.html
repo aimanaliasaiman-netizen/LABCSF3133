@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #content {
+            flex: 1;
+            background-color: rgb(155, 17, 197);
+            padding: 20px;
+        }
+
+        #footer {
+            background-color: rgb(102, 7, 77);
+            height: 8em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+  <div id="header" style="height: 60px; background-color: rgb(247, 50, 188); text-align: center;">
+    <h1>Pendaftaran Pelajar Baharu UMT <span>--UMT cita warisan</span></h1>
+  </div>
+
+  <div id="content" style="height:45em; width: auto; background-color: rgb(155, 17, 197); float: right;">
+        <form>
+            Student email: 
+            <input type="email" name="emailPelajar" placeholder="email@student" autofocus autocomplete>
+            <br><br>
+
+            Year and Month of student birth 
+            <input type="month" name="bulandantahun">
+            <br><br>
+
+            Satisfaction level: 
+            <input type="range" min="0" max="10" step="1" value="0">
+            <input type="submit" value="Simpan">
+        </form>
+
+        <!-- Separate calculator section -->
+        <div>
+            <br><br>
+            <label>Calculator:</label><br>
+            <input id="x" type="number" value="0" oninput="updateSum()"> +
+            <input id="y" type="number" value="0" oninput="updateSum()">
+            <br>= <output id="result">0</output>
+        </div>
+    </div>
+    <script>
+        function updateSum() {
+            const x = document.getElementById('x').value || 0;
+            const y = document.getElementById('y').value || 0;
+            document.getElementById('result').innerHTML = parseInt(x) + parseInt(y);
+        }
+    </script>
+
+
+
+  <div id="footer" style="background-color: rgb(102, 7, 77); height: 8em; display: flex; align-items: center; justify-content: center;">
+        Website ini adalah hakmilik Aiman &#169;
+  </div>
+</body>
+</html>
