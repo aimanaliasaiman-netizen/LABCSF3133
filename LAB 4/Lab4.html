@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boboiboy Club</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        header {
+            background-color: #7ef8a3;
+            color: #065183;
+            padding: 2px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            background-color: #618f0c;
+        }
+        nav ul li a:hover{background-color: rgb(65, 0, 59);}
+        nav ul li a:visited{background-color: rgb(226, 43, 43);}
+        nav ul li a:active {background-color: rgb(24, 87, 143); }
+        
+        section {
+            padding: 300px;
+        }
+        article {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-decoration: underline;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form label {
+            display: block;
+            margin-top: 100px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"]
+        form input[type="radio"],
+        form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        form input[type="submit"] {
+
+            background-color: #2d6134;
+            color: white;
+            border: 200px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #a01616;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to watch Boboiboy</h1>
+    </header>
+
+    <nav>
+        <ul>
+          <li><a href="https://www.youtube.com/@MonstaUniverseChannel"> Link Youtube Monsta</a></li>
+            <li><a href="#home">About This Page</a></li>
+            <li><a href="#media">Boboiboy S1 EP1</a></li>
+            <li><a href="#form"> Contact Form</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <article>
+            <h2>About This Page</h2>
+            <p>Step into the electrifying world of BoBoiBoy, where action, adventure, and friendship collide in the most epic way!
+               Whether you're a longtime fan or just discovering the magic, this site is your go-to destination for streaming episodes, exploring characters, and diving deep into the universe of BoBoiBoy and his elemental powers.
+              From battling alien threats to unlocking new transformations, BoBoiBoy and his team never fail to inspire with courage, humor, and heart. So grab your popcorn, power up your screen, and get ready to relive every thrilling moment right here!</p>
+        </article>
+    </section>
+
+    <section id="media">
+        <article>
+            <h2>Featured Video</h2>
+            <video width=80% height=auto controls>
+                <source src="boboiboybiskutyaya.mp4" type="video/mp4">
+                              Pelayar anda tidak menyokong tag video.
+        </article>
+    </section>
+
+    <section id="form">
+        <article>
+            <h2>Contact Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+
+                <label>Favorite Hobbies:</label>
+                <input type="checkbox" name="hobby" value="reading"> Reading
+                <input type="checkbox" name="hobby" value="sports"> Sports
+                <input type="checkbox" name="hobby" value="music"> Music
+
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; Boboiboy OnTop.</p>
+    </footer>
+
+</body>
+</html>
