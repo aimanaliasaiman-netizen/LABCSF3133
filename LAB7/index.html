@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Section 1: Transparent Image Text -->
+        <section id="home" class="intro">
+            <div class="intro-text">
+                <h1>Halu Guys</h1>
+                <p>tak tahu nak cakap apa ah</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Profile Card -->
+        <section id="about" class="section">
+            <div class="profile-card">
+                <img src="images1.jpg" alt="Profile">
+                <h2>Cutest cat ever</h2>
+                <p>Muka mintak wetpud</p>
+                <p>Kena bagi kalau tak kena ngap</p>
+                <div class="social-icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Skills with Progress Bar -->
+        <section id="skills" class="section">
+            <h2>Skills Progress</h2>
+                <div class="skill-item">
+                    <p>Cuteness <span class="progress-value">0%</span></p>
+                <div class="progress-container">
+            <!-- Remove the style attribute so it starts at 0% -->
+                <div class="progress-bar"></div>
+                </div>
+                </div>
+                <button id="simulate-progress">Simulate Progress</button>
+                </section>
+
+        <!-- Section 4: Slideshow -->
+        <section class="section">
+            <h2>Koleksi sticker</h2>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images.jpeg" alt="Image 1">
+                </div>
+                <div class="slide fade">
+                    <img src="images2.jpeg" alt="Image 2">
+                </div>
+                <div class="slide fade">
+                    <img src="images3.jpeg" alt="Image 3">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Form on Image -->
+        <section id="contact" class="section form-section">
+            <div class="form-container">
+                <h2>Isi jika mahu kucing ini call tengah malam</h2>
+                <form>
+                    <input type="text" placeholder="Nama" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Pesanan untuk kucing" rows="4"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section 6: Collapsible Section -->
+        <section id="faq" class="section">
+            <h2>FAQ</h2>
+            <button class="collapsible">Adakah kucing itu comel?</button>
+            <div class="collapsible-content">
+                <p>No answer selain ya</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

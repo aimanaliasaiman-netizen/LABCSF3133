@@ -1,0 +1,268 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* FIXED: Added semicolon */
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Side Navigation */
+.side-nav {
+    background: #a8baaa;
+    color: white;
+    width: 200px;
+    padding: 20px 0;
+    position: fixed;
+    height: 100vh;
+}
+
+.side-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s;
+}
+
+.side-nav a:hover {
+    background: #1e5b25;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    padding: 20px;
+}
+
+/* Hero Section */
+.intro {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('images.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Sections */
+.section {
+    background: rgb(120, 217, 253);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+}
+
+/* Profile Card */
+.profile-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #3498db;
+}
+
+.profile-card h2 {
+    margin: 10px 0;
+    border: none;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #144566;
+}
+
+/* Progress Bar */
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-item p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.progress-container {
+    height: 10px;
+    background: #ecf0f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #3498db;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+#simulate-progress {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+#simulate-progress:hover {
+    background: #185883;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; 
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Form Section */
+.form-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('images2.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    color: white;
+    border-color: white;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+}
+
+.form-container button {
+    background: #0b3957;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Collapsible */
+.collapsible {
+    background: #ec8342;
+    color: #2c3e50;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.collapsible:hover {
+    background: #e9ecef;
+}
+
+.collapsible-content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.collapsible-content.active {
+    padding: 15px;
+    max-height: 200px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 15px;
+}
