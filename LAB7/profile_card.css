@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f4f6;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  width: 320px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Header Image */
+.card-header img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Content */
+.card-body {
+  padding: 20px;
+}
+
+/* Name */
+.name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Role */
+.role {
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Bio */
+.bio {
+  font-size: 14px;
+  margin: 16px 0 20px;
+  color: #4b5563;
+}
+
+/* Social Icons */
+.social-links a {
+  text-decoration: none;
+  font-size: 22px;
+  margin: 0 10px;
+  color: #1f2937;
+  transition: 0.2s;
+}
+
+.social-links a:hover {
+  color: #111827;
+  transform: scale(1.1);
+}
