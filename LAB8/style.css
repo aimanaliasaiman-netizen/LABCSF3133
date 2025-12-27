@@ -1,0 +1,80 @@
+/* Simple CSS for FutureTech website */
+
+/* Add space for fixed navbar */
+body {
+    padding-top: 56px;
+}
+
+/* Home Section */
+.home-section {
+    background-color: #0066cc;
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+}
+.home-section h1 {
+    font-family: 'Arial Black', Impact, sans-serif;
+    color: #ffffff; /* White color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Change font for the subtitle */
+.home-section .lead {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #f0f0f0; /* Light gray */
+    font-size: 1.5rem;
+}
+/* Service Icons */
+.service-icon {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+/* Section spacing */
+section {
+    padding: 60px 0;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Make sure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form styling */
+.form-control:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+/* Custom button colors */
+.btn-primary {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.btn-primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+}
+
+/* Make sure text is readable */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
